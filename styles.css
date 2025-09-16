@@ -3,35 +3,54 @@
     font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    background-image: image('./content/food-background.jpg');
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     background-size: cover;
     background-position: center;
+    background-color: #666;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    background-image: url('./content/food-background.jpg');
+    filter: brightness(0.7) blur(2px);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
 }
 
 h1 {
-    color: #333;
+    color: whitesmoke;
     text-align: center;
     margin-top: 20px;
     font-size: 40px;
 }
 
 h2 {
-    color: #333;
+    color: whitesmoke;
     text-align: center;
     margin-top: 20px;
     font-size: 32px;
 }
 
 h3 {
-    color: #333;
+    color: whitesmoke;
     text-align: center;
     margin-top: 20px;
     font-size: 24px;
 }
 
 p {
-    color: #666;
+    color: whitesmoke;
     font-size: 1em;
     line-height: 1.6;
     margin: 20px;
@@ -39,7 +58,7 @@ p {
 }
 
 a {
-    color: #3498db;
+    color: whitesmoke;
     text-decoration: none;
 }
 a:hover {
@@ -47,7 +66,7 @@ a:hover {
 }
 
 ul, ol {
-    color: #666;
+    color: wheat;
     list-style-type: disc;
     margin: 20px;
     padding-left: 40px;
